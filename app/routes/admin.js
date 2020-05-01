@@ -13,8 +13,8 @@ module.exports = function(application){
 		var noticiasModel = application.app.models.noticiasModel;
 
 		noticiasModel.salvarNoticia(noticia, connection, function(erro, result){
-		  res.send(redirect);
-		  //res.redirect('/noticias');
+		 
+		  res.redirect('/noticias');
 
 		});
 	});
